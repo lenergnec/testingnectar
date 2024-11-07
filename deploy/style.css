@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ubuntu";
+    transition: all 0.8s ease;
+  }
+  
+  body {
+    background: #f0f8ff
+  }
+  
+  .container {
+    display: flex;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .container-unit-data {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    margin: 0px;
+    border-radius: 25px;
+    background-color: white;
+  }
+  /* .information{margin: 20px; padding: 20px;} */
+  
+  .information{
+      width: 1000px;
+      text-align: left;
+      color: #666;
+      transition: transform 0.2s;
+  }
+  
+  .information:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  .inputs {
+    background-color: rgb(234,240,247);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: auto;
+    height: 30%;
+    width: 30%;
+    transition: transform 0.2s;
+  
+  }
+  
+  .inputs:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  .inputs input, button {
+    
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      outline: none;
+  }
+  
+  .inputs input:focus {
+    border-color: rgb(13, 138, 255);
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+  }
+  
+  .info_unidad{
+    height: 150px;
+    width: auto;
+    display:grid;
+    margin:15px;
+    padding:15px;
+    border-radius: 25px;
+    background-color:rgb(234,240,247);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .info_unidad:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  
+  
+  .tolerancia_info{
+    height: 150px;
+    width: auto;
+    display:grid;
+    margin:15px;
+    padding:15px;
+    border-radius: 25px;
+    background-color:rgb(234,240,247);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  
+  }
+  .tolerancia_info:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  .recorrido_info{
+    display:grid;
+    height: 170px;
+    width: auto;
+    margin:15px;
+    padding:15px;
+    border-radius: 25px;
+    background-color:rgb(234,240,247);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  
+  }
+  .recorrido_info:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  .odometro_info{
+    height: 170px;
+    width: auto;
+    display:grid;
+    margin:15px;
+    padding:15px;
+    border-radius: 25px;
+    background-color:rgb(234,240,247);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  
+  }
+  .odometro_info:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  .botones {
+    display: flex; /* Flexbox para alinear en línea */
+    gap: 10px;     /* Espaciado entre botones */
+    justify-content:center; /* Opcional: centra los botones en el contenedor */
+  }
+  
+  .botones button {
+    height: 60px;
+    width: 60px;
+    background-color:rgb(13, 138, 255);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 7px 10px #0000001a;
+  }
+  
+  .botones button:hover{
+    background-color: white;
+    color: rgb(13, 138, 255);
+   
+  }
+  #button_clear{
+    color: red;
+    background-color: white;
+  }
+  
+  #button_clear:hover{
+    background-color: red;
+    color: rgb(234,240,247);
+  }
+  
+  p{
+    color: #737373;
+    font-size: 18px;
+  }
+  
+  
+  .developer{
+    font-size: 1em;
+    line-height: 1.6; /* Mejorar la legibilidad con mayor altura de línea */
+    color: #666; /* Un gris suave para el texto */
+    margin-bottom: 0;
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    text-align: center; /* Justificar el texto */
+  }
+
+  #title-datos-unidad{
+    margin: 10px;
+    color: #666
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+
+
+#logo-id {
+  width: 150px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para la navegación */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration:underline;
+}
+
+label{
+  color: #737373;
+  font-size: 18px;
+  margin-left: 10px;
+}
+  
+  

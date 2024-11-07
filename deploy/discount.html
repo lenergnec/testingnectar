@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfomance</title>
+    <link rel="stylesheet" href="styleDs.css" />
+  </head>
+  <body>
+    <header>
+        <div class="logo-empresa">
+          
+          <img class="logo" src="TC.png" alt="Calculadora" id="logo-id">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Rendimiento</a></li>
+            <li><a href="discount.html">Descuento</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+     
+      <div class="container-datos">
+
+        <div class="inputs" id="litros-input">
+          <h3 id="title-descuentos">Descuentos</h3>
+
+          <label class="lable-litros" id="title-litros">Litros</label>
+          <input
+            type="number"
+            id="litros"
+            placeholder="Ingrese litros"
+          />
+
+          <label class="lable-precio" id="title-precio">Precio</label>
+          <input
+            type="number"
+            id="precio"
+            placeholder="Ingrese precio de producto"
+          />
+
+          <label class="lable-descuento" id="title-descuento">Descuento</label>
+          <input
+            type="number"
+            id="descuento"
+            placeholder="Ingrese descuento"
+          />
+
+          <div class="radio-button">
+
+            <label class="custom-radio">
+                <input class="descuento-porcentual" type="radio" name="option" value="Porcentual">
+                <span class="radio-mark"></span>
+                Descuento Porcentual
+              </label>
+
+            <label class="custom-radio">
+                <input class="descuento-fijo" type="radio" name="option" 
+                value="Fijo">
+                <span class="radio-mark"></span>
+                Descuento Fijo
+              </label>
+  
+          </div>
+
+          <div class="botones">
+
+            <button class="button-calculo-descuento" id="calcular-descuento">
+              <ion-icon name="calculator-outline"></ion-icon>
+            </button>
+
+            <button class="button_clear_icon" id="button_clear">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+
+              <span class="close">&times;</span>
+
+              <h2>Resultado del Cálculo</h2>
+
+              <div class="card">
+                  <p id="resultado"></p>
+                  <div class="inputs-datos-ingresados">
+                    <p class="title-card">Valores ingresados</p>
+                    <span class="display-precio" id="displayLitros">Litros</span>
+                    <span class="display-precio"z id="displayPrecio">Precio</span>
+                    <span class="display-Descuento-Tipo" id="displayDescuentoTipo">Tipo</span>
+                    <span class="display-descuento" id="displayDescuento">Descuento</span>
+                  </div>
+                  <div class="valores-calculados">
+                    <p class="title-card">Valores calculados</p>
+                   
+                    <span class="subTotal" id="subtotalAmount">Subtotal</span>
+                    <span class="Total" id="totalAmount">Total</span>
+                    <span class="display-savings" id="displaySavings">Ahorro</span>
+                  </div>
+                    
+
+              </div>
+          </div>
+      </div>
+
+    <script src="scriptDescuentos.js" type="module"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

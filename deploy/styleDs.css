@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ubuntu";
+    transition: all 0.8s ease;
+  }
+  
+  body {
+    background: rgb(234,240,247)
+  }
+  
+  .container {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .container-datos {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: white;
+  }
+  /* .information{margin: 20px; padding: 20px;} */
+  
+  .inputs {
+    background-color: rgb(234,240,247);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: auto;
+    height: auto;
+    width: 100%;
+    transition: transform 0.2s;
+  
+  }
+  
+  .inputs:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  }
+  
+  .inputs input, button {
+    
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      outline: none;
+  }
+  
+  .inputs input:focus {
+    border-color: rgb(13, 138, 255);
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+  }
+   
+  .botones {
+    display: flex; /* Flexbox para alinear en línea */
+    gap: 10px;     /* Espaciado entre botones */
+    justify-content:flex-end; /* Opcional: centra los botones en el contenedor */
+  }
+
+  .radio-button input[type="radio"] {
+    display:none;  
+  }
+
+  .custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .radio-mark {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(13, 138, 255);
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .custom-radio input[type="radio"]:checked + .radio-mark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(13, 138, 255);
+    border-radius: 50%;
+  }
+  /* El estado seleccionado del radio button */
+.custom-radio input[type="radio"]:checked + .radio-mark {
+    background-color: white;
+  }
+  
+  .botones button {
+    height: 60px;
+    width: 60px;
+    background-color:rgb(13, 138, 255);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 7px 10px #0000001a;
+  }
+  
+  .botones button:hover{
+    background-color: white;
+    color: rgb(13, 138, 255);
+   
+  }
+  #button_clear{
+    color: red;
+    background-color: white;
+  }
+  
+  #button_clear:hover{
+    background-color: red;
+    color: rgb(234,240,247);
+  }
+  
+  p{
+    color: #737373;
+    font-size: 18px;
+  }
+  
+  
+  .developer{
+    font-size: 1em;
+    line-height: 1.6; /* Mejorar la legibilidad con mayor altura de línea */
+    color: #666; /* Un gris suave para el texto */
+    margin-bottom: 0;
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    text-align: center; /* Justificar el texto */
+  }
+
+#title-descuentos{
+    margin: 10px;
+    color: #666
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+#logo-id {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Estilos para la navegación */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:underline;
+  }
+
+  .modal {
+    display: none;
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234,240,247);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    
+}
+
+.card span{
+  word-spacing: 10px;
+  
+}
+
+.inputs-datos-ingresados{
+  display: grid;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f4f1f8;
+  word-spacing: 10px;
+  
+}
+
+.valores-calculados{
+  display: grid;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f4f1f8
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.card span{
+  display:table-row;
+  text-align: left;
+  padding: 15px;
+  color: #020d19;
+    
+}
+
+h2{
+  margin: 10px;
+  color: #666
+}
+
+
+
+
+
+
+  
+
+  
+  
+  

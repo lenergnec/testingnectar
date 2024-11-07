@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfomance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-empresa">
+        <img class="logo" src="TC.png" alt="Calculadora" id="logo-id">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Rendimiento</a></li>
+          <li><a href="discount.html">Descuento</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+     
+      <div class="container-unit-data">
+       
+        <div class="inputs" id="datos-unidad">
+          <h3 id="title-datos-unidad">Datos de la unidad</h3>
+          <label>Tolerancia configurada</label>
+          <input
+            type="number"
+            min="0"
+            id="unit-tolerancia"
+            placeholder="Tolerancia configurada"
+          />
+          <label>Rendimiento configurado</label>
+          <input
+            type="number"
+            id="unit-rend"
+            placeholder="Rendimiento configurado"
+          />
+          <label>Litros ingreados</label>
+          <input
+            type="number"
+            id="volumen-litros"
+            placeholder="Ingrese Litros"
+          />
+          <label>Odometro anterior ingresado</label>
+          <input
+            type="number"
+            id="odometro-anterior"
+            placeholder="Odometro anterior"
+          />
+          <div class="botones">
+            <button class="button_datos_unidad" id="save_datos_unidad">
+              <ion-icon name="calculator-outline"></ion-icon>
+            </button>
+
+            <button class="button_clear_icon" id="button_clear">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+       
+   
+        
+
+        <div class="information">
+          <div class="info_unidad">
+            <h3>Datos en Central de unidad</h3>
+            <p id="resp_tolerancia">Tolerancia configurada:</p>
+            <p id="resp_rendimiento">Rendimiento configurado:</p>
+          </div>
+
+          <div class="tolerancia_info">
+            <h3 id="title_tolerancia">Calculos en base a datos configurados</h3>
+            <p id="tolerancia_porcentual">Calculos de tolerancias menor y mayor</p>
+            <p id="tolerancia_menor_calculada"></p>
+            <p id="tolerancia_mayor_calculada"></p>
+          </div>
+        <div>
+          <div class="recorrido_info">
+            <h3 id="title-odometro">Litros vs recorrido</h3>
+            <p id="volumen_ingresado">Litros ingresados</p>
+            <p id="rendimiento_optimo">Rendimiento optimo</p>
+            <p id="km_rendimiento_menor">Rendimiento Tolerancia Menor</p>
+            <p id="km_rendimiento_mayor">Rendimiento Tolerancia Mayor</p>
+          </div>
+
+          <div class="odometro_info">
+            <h3 id="title-odometro">Odometro a ingresar</h3>
+            <p id="odometro-anterior-text">Odometro anterior</p>
+            <p id="odometro-actual-optimo">Odometro actual optimo</p>
+            <p id="odometro-actual-menor">Odometro con Tolerancia Menor</p>
+            <p id="odometro-actual-mayor">Odometro con Tolerancia Mayor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
